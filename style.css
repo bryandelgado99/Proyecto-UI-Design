@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap);
+
+*, ::before, ::after{
+    margin: 0;   
+    font-family: 'Dosis', sans-serif;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #f1f2eb;
+    --second-color: #d8dad3;
+    --main-color: #a4c2a5;
+    --second-bg-color: #566246;
+    --textcolor: #4a4a48;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.header{
+    background-color: #85ebd9;
+    position: fixed;
+    display: inline-flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color:var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar{
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a{
+    font-size: 1.9rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+    padding: 80px;
+    font-family: "Coolvetica";
+    margin: 0 auto;
+}
+
+.navbar a:hover, .navbar a:active{
+    color: white;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid var(--second-bg-color);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: var(--textcolor);
+    transition: color 0.4s 0.1s ease-out;
+    text-align: center;
+  }
+  
+  button span {
+    font-family: "Coolvetica";
+    margin: 10px;
+  }
+  
+  button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  button:hover {
+    color: #fff;
+    border: 1px solid var(--main-color);
+  }
+  
+  button:hover::before {
+    box-shadow: inset 0 0 0 10em var(--main-color);
+  }
+
+.cart{
+    color: white;
+    font-size: 1.7rem;
+}
