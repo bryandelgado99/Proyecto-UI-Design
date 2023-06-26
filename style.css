@@ -1,126 +1,237 @@
 @import url(https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap);
 
-*, ::before, ::after{
+* {
     margin: 0;   
     font-family: 'Dosis', sans-serif;
     padding: 0;
-    text-decoration: none;
-    outline: none;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 :root{
-    --bg-color: #f1f2eb;
-    --second-color: #d8dad3;
-    --main-color: #a4c2a5;
-    --second-bg-color: #566246;
-    --textcolor: #4a4a48;
+  --bg-color: #f1f2eb;
+  --second-color: #d8dad3;
+  --main-color: #a4c2a5;
+  --second-bg-color: #566246;
+  --textcolor: #4a4a48;
 }
 
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
+body{
+  background-image: url("assets/10690486_4477486.png");
+  background-size: cover;
 }
 
 .header{
-    background-color: #85ebd9;
-    position: fixed;
-    display: inline-flex;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+  background-color: #bad6ba;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+  border-radius: 0 0 45px 45px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
 }
 
-.logo{
-    font-size: 2.5rem;
-    color:var(--text-color);
-    font-weight: 600;
-    cursor: default;
+.header .logo{
+  cursor: pointer;
 }
 
-.navbar{
-    position: relative;
-    left: 50%;
-    transform: translatex(-50%);
-    position: sticky;
-    top: 0;
-    align-items: center;
-    justify-content: center;
+.header .logo img{
+  height: 50px;
+  width: auto;
+  transition: .5s ease-in;
 }
 
-.navbar a{
-    font-size: 1.9rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-    transition: .3s;
-    padding: 80px;
-    font-family: "Coolvetica";
-    margin: 0 auto;
+.header .logo img:hover{
+  transform: scale(1.2);
 }
 
-.navbar a:hover, .navbar a:active{
-    color: white;
+.header .navbar ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
 }
 
-button {
-    width: 100px;
-    height: 30px;
-    background: transparent;
-    position: relative;
-    padding: 5px 15px;
-    display: inline-flex;
-    align-items: center;
-    font-size: 1.7rem;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid var(--second-bg-color);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: var(--textcolor);
-    transition: color 0.4s 0.1s ease-out;
-    text-align: center;
-  }
-  
-  button span {
-    font-family: "Coolvetica";
-    margin: 10px;
-  }
-  
-  button::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: '';
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
-  button:hover {
-    color: #fff;
-    border: 1px solid var(--main-color);
-  }
-  
-  button:hover::before {
-    box-shadow: inset 0 0 0 10em var(--main-color);
-  }
+.header .navbar ul li:hover{
+  transform: scale(1.1);
+}
 
-.cart{
-    color: white;
-    font-size: 1.7rem;
+.header .navbar ul li a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--textcolor);
+  font-family: "Coolvetica", sans-serif;
+  transition: .5s;
+}
+
+.header .navbar ul li a:hover{
+  color: white;
+}
+
+
+/*Boton de tienda*/
+.btn {
+  background-color: #9aaf9b;
+  border: .5px solid var(--second-bg-color);
+  padding: 6px;
+  position: relative;
+  width: 7.2rem;
+  height: 2em;
+  transition: 0.5s ease-in-out;
+  font-size: 17px;
+  border-radius: 0.8em;
+  cursor: pointer;
+}
+
+.btn p {
+  position: absolute;
+  top: 0.4em;
+  left: 1.5em;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  color: white;
+  font-family: "Coolvetica";
+}
+
+.btn svg {
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff;
+}
+
+.btn:hover p {
+  left: 0.6em;
+  color: #fff
+}
+
+.btn:hover svg {
+  opacity: 1;
+}
+
+.btn:hover {
+  background-color: var(--second-bg-color);
+}
+
+/*Body Styles - Home*/
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.home-content h3{
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.home-content h2{
+  font-size: 2.9rem;
+  font-weight: 800;
+}
+
+span{
+  color: var(--main-color);
+}
+
+.home-content h3:nth-of-type(2){
+  margin-bottom: 2rem;
+}
+
+.home-content h1{
+  font-family: "Coolvetica";
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #566246;
+}
+
+.home-content{
+  min-height:100px;
+  margin-left: 80px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.home-content p{
+  margin-top: 20px;
+  line-height: 2;
+}
+
+.home-img{
+  min-height:100px;
+  margin-left: 20px;
+  margin-right: 80px;
+  padding: 20px;
+}
+
+.card {
+  width: 800px;
+  height: 400px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#566246, #9aaf9b);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+
+.img1{
+  position: relative;
+  overflow: auto;
+  width: 625px;
+  left: 12%;
+  top: 5%;
+}
+
+
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
 }
