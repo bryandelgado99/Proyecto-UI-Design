@@ -1,81 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodzy | Dale una segunda oportunidad a la comida</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foodzy | Dale una segunda oportunidad a la comida</title>
 
-    <!--Import stylesheet-->
-    <link rel="stylesheet" href="style.css">
-    <!--load all styles -->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--Import stylesheet-->
+        <link rel="stylesheet" href="style.css">
+        <!--load all styles -->
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--Import Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap" rel="stylesheet">
+        <!--Import Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap" rel="stylesheet">
 
-</head>
-<body>
-    <!--Header section-->
-        <header class="header">
-            <div class="logo">
-                <img src="assets\logo.png" alt="logo">
+    </head>
+    <body>
+        <!--Header section-->
+            <header class="header">
+                <div class="logo">
+                    <img src="assets\logo.png" alt="logo">
+                </div>
+
+                <nav class="navbar">                
+                        <ul>
+                            <li><a href="#Home">Inicio</a></li>
+                            <li><a href="#About Us">Sobre Nosotros</a></li>
+                            <li><a href="#Services">Servicios</a></li>
+                            <li><a href="#Partners">Socios</a></li>
+                            <li><a href="#Contanct">Encuentranos</a></li>
+                        </ul>
+                </nav>
+
+                <button class="btn">
+                    <p>Zy-store</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                </button>
+            </header>
+
+        <!--Body web section-->
+        <!--Home-->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Experimenta un nuevo mercado con</h3>
+                <h1>Foodzy</h1>
+                <h2>El placer del <span class="multi">ahorro</span> al comer!</h2>
+                <p>Aprovecha nuestras ofertas y conoce al nuevo mercado hard disccount de productos a punto de caducar,
+                    con increibles descuentos y seguridad, para tu cuerpo y tu economía.</p>
             </div>
 
-            <nav class="navbar">                
-                    <ul>
-                        <li><a href="#Home">Inicio</a></li>
-                        <li><a href="#About Us">Sobre Nosotros</a></li>
-                        <li><a href="#Services">Servicios</a></li>
-                        <li><a href="#Contanct">Encuentranos</a></li>
-                       
-                    </ul>
-            </nav>
-
-            <button class="btn">
-                <p>Zy-store</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
-            </button>
-        </header>
-
-    <!--Body web section-->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Experimenta un nuevo mercado con</h3>
-            <h1>Foodzy</h1>
-            <h2>El placer de comer con <span class="multi"></span>ahorro</h2>
-            <p>Aprovecha nuestras ofertas y conoce al nuevo mercado hard disccount de productos a punto de caducar,
-                con increibles descuentos y seguridad, para tu cuerpo y tu economía.</p>
-        </div>
-
-        <div class="home-img">
-            <div class="card">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="card-inner">
-                    <img src="assets/expo.png" alt="img1" class="img1">
+            <div class="home-img">
+                <div class="card-home">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="card-inner">
+                        <img src="assets/expo.png" alt="img1" class="img1">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about">
+        <!-- About -->
+        <section class="about">
+            <div class="card1">
+                <img src="assets\mujer-tableta-comprobando-carrito-compras-ver-si-tiene-todo-lo-que-necesita-almuerzo.jpg" alt="img-card1">
+                <div class="card__content">
+                <p class="card__title">¿Qué es Foodzy?</p>
+                    <p class="card__description">Foodzy nace como un negocio que busca innovar el mercado ecuatoriano, ofreciendo productos de calidad que posean fechas delimitadas a su punto de caducidad, presentando 
+                        descuentos y ofertas para sus potenciales clientes. Los consumibles ofrecidos se entregan con hojas de seguridad y lineamientos, de seguridad y salud, para su consumo habitual.
+                    </p>
+                </div>
+            </div>
+            
+            <!--viewBox="0 0 24 24"-->
 
-    </section>
+            <div class="card2">
+                <img src="assets\lay-flat-manojo-provisiones-frescas-donacion.jpg" alt="img-card2">
+                <div class="card__content">
+                <p class="card__title">Objetivos</p>
+                <p class="card__description"></p>
+                </div>
+            </div>
+        </section>
 
-    <section class="services">
+        <!--Servicios-->
+        <section class="services">
 
-    </section>
+        </section>
 
-    <section class="contact">
+         <!--Parteners-->
+         <section class="partnerts">
+            <div class="container">
+                <div class="item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Corporaci%C3%B3n_Favorita_Logo.png" alt="" /></div>
+                <div class="item"><img src="https://www.elrosado.com/Images/grupo%20Rosado.png?m=20180510044410"alt="" /></div>
+                <div class="item"><img src="https://ilacad.com/BO/img/empresa/Ecuador_GPF_Logo.png"alt=""></div>
+                <div class="item"><img src="https://www.coralhipermercados.com/static/media/LogoG.5bf16ebc.png"alt="" /></div>
+                <div class="item"><img src="https://pactoglobal-ecuador.org/wp-content/uploads/2019/08/Nestle.png"alt="" /></div>
+                <div class="item"><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Arca_continental_logo.png"alt="" /></div>
+                <div class="item"><img src="https://www.kelloggs.com.co/content/LatinAmerica/kelloggs_co/es_CO/jcr:content/par/commoncontentroot/headerGrid/par/responsiveimage.img.png/1515789576193.png" alt="" /></div>
+            </div>
+         </section>
+        
+        <!--Contacto-->
+        <section class="contact">
 
-    </section>
+        </section>
 
+        <!---Scripts Load-->
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        
+        <!--Footer section-->
+        <footer>
 
-    <!---Scripts Load-->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    
-</body>
+        </footer>
+        
+    </body>
 </html>
