@@ -31,7 +31,7 @@ body{
   height: 85px;
   padding: 5px 10%;
   border-radius: 0 0 45px 45px;
-  position: sticky;
+  position:static;
   top: 0;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(20px);
@@ -401,12 +401,36 @@ span{
 	100% { transform: translateX(calc(-150px * 7))}
 }
 
+.title_1{
+  font-family: "Coolvetica", sans-serif;
+  font-size: 1.7rem;
+  background-color: #9aaf9b;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 25px;
+  color: white;
+  margin-top: 0px;
+  width: 20%;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.partnerts{
+  background-color: #aac4ab;
+  width: 90%;  
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+  margin-left: 100px;
+  z-index: -1;
+}
+
 .container {
   display: inline-flex;
   overflow: hidden;
   padding: 10px;
   width: 100%;
   height: 150px;
+  margin-top: 25px;
   background-color: white;
 }
 
@@ -583,15 +607,16 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 850px;
     margin-left: 100px;
     width: 90%;
     height: 700px;
-    background-color: #b1c5b2;
-    border-radius: 5px;
+    border-radius: 5px 5px 5px 125px;
     padding-left: 30px;
     padding-right: 25px;
     box-shadow:  0 0 15px 5px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    padding: 50px;
   }
 
   .title2{
@@ -600,12 +625,114 @@ span{
     font-size: 1.7rem;
     background-color: #7a8768;
     color: var(--bg-color);
-    padding: 20px;
-    margin-top: -700px;
-    margin-left: 50px;
+    padding: 15px;
+    margin-right: 500px;
+    margin-top: 125px;
+    border-radius: 5px 20px 5px 20px;
+    margin-left: 825px;
+    text-align: center;
+    width: 250px;
+    margin-bottom: -820px;
+    z-index: 2;
+    font-weight: lighter;
+  }
+
+  .mapouter{
+    position:relative;
+    text-align:right;
     border-radius: 20px 5px 20px 5px; 
-    z-index: 0;
-    transition: .3s ease-in;
+    width:805px;
+    height:600px;
+  }
+
+  .gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    border-radius: 20px 5px 20px 5px; 
+    width:805px;
+    height:600px;
+  }
+
+  .gmap_iframe {
+    width:805px!important;
+    height:600px!important;
+    border-radius: 20px 5px 20px 5px; 
+  }
+
+  .redes{
+    z-index: 1;
+    padding: 50px;
+    margin-left: 25px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
   
+  .cards .instagram {
+    background-color: #bd4055;
+  }
   
+  .cards .facebook {
+    background-color: #3d74cc;
+  }
+  
+  .cards .whatsapp {
+    background-color: #7a8768;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 180px;
+    width: 550px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 2.7em;
+    padding: 10px;
+    margin-top: -15px;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: 1em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+  /*Footer*/
+  .footer{
+    width: 100%;
+    height: 100px;
+    background-color: #a4c2a5;
+    margin-top: 100px;
+    border-radius: 45px 45px 0 0;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .cpyright{
+    margin-left: 80px;
+    text-align: left;
+    color: white;
+    font-size: 1.3rem;
+    padding-top: 35px;
+    font-weight: bolder;
+    letter-spacing: .65px;
+  }
