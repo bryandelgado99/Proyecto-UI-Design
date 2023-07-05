@@ -578,5 +578,34 @@ span{
     transform: translateY(100%);
   }
   
+  /*Encuentranos*/
+  .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 90%;
+    height: 700px;
+    background-color: #b1c5b2;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 25px;
+    box-shadow:  0 0 15px 5px rgba(0,0,0,0.2);
+  }
+
+  .title2{
+    font-family: "Coolvetica", sans-serif;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    background-color: #7a8768;
+    color: var(--bg-color);
+    padding: 20px;
+    margin-top: -700px;
+    margin-left: 50px;
+    border-radius: 20px 5px 20px 5px; 
+    z-index: 0;
+    transition: .3s ease-in;
+  }
   
   
