@@ -482,13 +482,13 @@ span{
   /*Products styles*/
   .card-1 {
     height: auto;
-    width: 390px;
+    width: 500px;
     position: relative;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;
     box-shadow: 0 0 20px 8px #d0d0d0;
     overflow: hidden;
-    margin-left: 25px;
+    margin-left: 5px;
   }
   
    /*Image*/
@@ -534,28 +534,28 @@ span{
   
   .card-2 {
     height: auto;
-    width: 390px;
+    width: 500px;
     position: relative;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;
     box-shadow: 0 0 20px 8px #d0d0d0;
     overflow: hidden;
-    margin-left: 120px;
+    margin-left: 30px;
   }
-  
+
   .card-2:hover .cnew-description {
     transform: translateY(100%);
   }
 
   .card-3 {
     height: auto;
-    width: 390px;
+    width: 500px;
     position: relative;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;
     box-shadow: 0 0 20px 8px #d0d0d0;
     overflow: hidden;
-    margin-left: 120px;
+    margin-left: 30px;
   }
   
   .card-3:hover .cnew-description {
@@ -565,13 +565,13 @@ span{
   
   .card-4 {
     height: auto;
-    width: 390px;
+    width: 500px;
     position: relative;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;
     box-shadow: 0 0 20px 8px #d0d0d0;
     overflow: hidden;
-    margin-left: 120px;
+    margin-left: 30px;
   }
   
   .card-4:hover .cnew-description {
